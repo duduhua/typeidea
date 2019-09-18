@@ -1,3 +1,24 @@
 *.pyc
 *.swp
 *.sqlite3
+
+[alias]
+    st = status
+    br = branch
+    co = checkout
+    ci = commit
+    diff = diff --cloor
+    df = diff
+    dc = diff --cached
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[core]
+    editor = vim
+    excludesfile = /Users/duduna/.gitignore_global
+[user]
+    name = duduna
+    email = 邮箱地址
+[push]
+    default = current
+[color]
+    diff = auto
+    ui = auto
