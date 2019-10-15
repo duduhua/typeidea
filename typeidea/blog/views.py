@@ -57,7 +57,8 @@ class CommonViewMixin:
     # def get_sidebars(self):
     #     return SideBar.objects.filter(status=SideBar.STATUS_SHOW)
 
-class IndexView(ListView):
+
+class IndexView(CommonViewMixin, ListView):
     queryset = Post.latest_post()
     paginate_by = 5
     context_object_name = 'post_list'
